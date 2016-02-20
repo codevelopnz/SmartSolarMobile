@@ -1,0 +1,14 @@
+{
+  "name": "SmartSolarMobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh"
+  },
+  "dependencies": {
+    "flux": "^2.1.1",
+    "react-native": "0.17",
+    "react-native-drawer": "^1.6.0",
+    "react-native-navbar": "1.1.7"
+  }
+}
