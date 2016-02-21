@@ -145,7 +145,24 @@ var styles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: 24
     },
-    
+    buttonBordered: {
+        height: 50.5,
+        fontSize: 16,
+        padding: 20,
+    },
+    buttonLink: {
+        alignSelf: 'stretch',
+        marginLeft: 0,
+        marginRight: 0,
+        padding: 20,
+        height: 50,
+    },
+    buttonTextLink: {
+        textAlign: 'center',
+        color: '#6D6E85',
+        fontSize: 12
+        
+    }
 });
 
 module.exports= styles;

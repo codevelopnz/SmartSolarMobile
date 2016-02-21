@@ -20,7 +20,6 @@ module.exports = StyleSheet.create({
 		flex: 1,
 		justifyContent: 'center',
 		padding: 0
-
 	},
 	loginLogo: {
 		width: 100,
@@ -66,19 +65,5 @@ module.exports = StyleSheet.create({
 		marginLeft: 0,
 		height: 51
 	},
-    button: {
-        backgroundColor: '#EF6C00',
-        padding: 15,
-        marginLeft: 0,
-        marginRight: 0,
-        borderTopWidth: 0,
-        alignSelf: 'center',
-        color: '#fff',
-        alignSelf: 'stretch',
-        textAlign: 'center',
-        
-    },
-    buttonOpen: {
-        
-    }
+    
 });

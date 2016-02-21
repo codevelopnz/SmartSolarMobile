@@ -12,10 +12,10 @@ module.exports = React.createClass({
     render: function(){
         return(
             <TouchableHighlight
-            style={styles.button}
-            underlayColor="rgba(5, 165, 209, 0.5)"
+            style={styles.buttonLink}
+            underlayColor="#fff"
             onPress={this.props.onPress}>
-                <Text style={styles.buttonText}>{this.props.text}</Text>
+                <Text style={styles.buttonTextLink}>{this.props.text}</Text>
             </TouchableHighlight>
         )
     }

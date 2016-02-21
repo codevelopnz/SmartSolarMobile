@@ -6,8 +6,8 @@ var React = require('react-native');
 var styles = require('../Styles/style');
 var login = require('../Styles/login');
 var ButtonFull = require('./ButtonFull');
-var ButtonOpen = require('./ButtonOpen');
-var Button = require('./Button');
+var ButtonBordered = require('./ButtonBordered');
+var ButtonLink = require('./ButtonLink');
 var AppDispatcher = require('./../Dispatcher/AppDispatcher');
 
 var {
@@ -57,16 +57,16 @@ var Login = React.createClass({
                         onPress={this.login}
                         text="LOG IN" />   
                 </View>
-                <View style={{marginTop: 10}}>
-                    <ButtonOpen
-                        style={login.buttonOpen}
+                <View style={{marginTop: 15}}>
+                    <ButtonBordered
+                        style={login.buttonBordered}
                         onPress={this.signUp}
                         text="Sign Up"
                         />
                 </View>
-                <View style={{marginTop: 10}}>
-                    <Button
-                        style={login.button}
+                <View style={{marginTop: 30}}>
+                    <ButtonLink
+                        style={login.buttonLink}
                         onPress={this.signUp}
                         text="Forgot Your Password?"
                         />
