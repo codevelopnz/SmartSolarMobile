@@ -9,10 +9,11 @@ var {
 
 module.exports = StyleSheet.create({
 	textInput: {
-		height: 40, 
+		height: 51, 
 		backgroundColor: 'transparent',
-		color: 'rgba(255, 255, 255, 0.9)',
-		paddingLeft: 10,
+		color: 'rgba(109, 110, 133, 0.6)',
+		paddingLeft: 32,
+        fontSize: 16
 	},
 	bg : {
 		backgroundColor: '#fffff',
@@ -42,18 +43,42 @@ module.exports = StyleSheet.create({
 	border: {
 		alignSelf: 'stretch',
 		position: 'relative',										
-		borderColor: 'rgba(255,255,255,0.5)',
-		borderBottomWidth: 1,
-		borderTopWidth: 0,
+		borderColor: 'rgba(109, 110, 133, 0.6)',
+		borderBottomWidth: 0.5,
+		borderTopWidth: 0.5,
 		borderLeftWidth: 0,
 		borderRightWidth: 0,
-		marginTop: 15,
-		marginRight: 10,
-		marginLeft: 10,
-		height: 40
+		marginTop: 0,
+		marginRight: 0,
+		marginLeft: 0,
+		height: 51
+	},
+    borderTop: {
+		alignSelf: 'stretch',
+		position: 'relative',										
+		borderColor: 'rgba(109, 110, 133, 0.6)',
+		borderBottomWidth: 0,
+		borderTopWidth: 0.5,
+		borderLeftWidth: 0,
+		borderRightWidth: 0,
+		marginTop: 0,
+		marginRight: 0,
+		marginLeft: 0,
+		height: 51
 	},
     button: {
         backgroundColor: '#EF6C00',
-        padding: 15
+        padding: 15,
+        marginLeft: 0,
+        marginRight: 0,
+        borderTopWidth: 0,
+        alignSelf: 'center',
+        color: '#fff',
+        alignSelf: 'stretch',
+        textAlign: 'center',
+        
+    },
+    buttonOpen: {
+        
     }
 });

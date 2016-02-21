@@ -11,7 +11,7 @@ var styles = StyleSheet.create({
  
     container: {
       flex: 1,
-       backgroundColor: '#475577',
+       backgroundColor: '#fff',
     },
    
     transparent: {
@@ -22,7 +22,7 @@ var styles = StyleSheet.create({
         
     },
     bg : {
-      backgroundColor: '#3B3738',
+      backgroundColor: '#fff',
       flex: 1,
     },
     verticalCenter: {
@@ -109,14 +109,41 @@ var styles = StyleSheet.create({
     button: {
       backgroundColor: '#EF6C00',
       padding: 15,
-      borderColor: '#eeeeee',
+      borderColor: '#EF6C00',
       borderWidth:1,
-      borderBottomColor: '#aaaaaa',
+      borderBottomColor: '#EF6C00',
       marginRight:0,
       marginLeft:0,
-      width: 300,
       alignSelf: 'center',
       marginTop: 10
+    },
+    buttonFull: {
+      backgroundColor: '#EF6C00',
+      padding: 15,
+      borderColor: '#EF6C00',
+      borderWidth:1,
+      borderBottomColor: '#EF6C00',
+      marginRight:0,
+      marginLeft:0,
+      alignSelf: 'center',
+      marginTop: 10
+    },
+    buttonText: {
+        color: '#fff',
+        alignSelf: 'center',
+        fontSize: 24
+    },
+    buttonOpen: {
+        backgroundColor: '#fff',
+        borderColor: '#EF6C00',
+        borderWidth: 1,
+        marginLeft: 10,
+        marginRight: 10
+    },
+    buttonTextOpen: {
+        color: '#EF6C00',
+        alignSelf: 'center',
+        fontSize: 24
     },
     
 });
