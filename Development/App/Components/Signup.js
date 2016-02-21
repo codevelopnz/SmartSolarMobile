@@ -22,19 +22,19 @@ var windowWidth = Dimensions.get('window').width;
 
 var Login = React.createClass({
     login(){
-        var Home = require('./Home');
+        var SignUp = require('./Signup');
         AppDispatcher.dispatch({
             actionType: 'Navigate',
-            component: Home
+            component: SignUp
 
         });
 
     },
     signUp(){
-        var SignUp = require('./Signup');
+        var Home = require('./Home');
         AppDispatcher.dispatch({
             actionType: 'Navigate',
-            component: SignUp
+            component: Home
 
         });
     },
@@ -62,14 +62,14 @@ var Login = React.createClass({
                 <View style={{marginTop: 15}}>
                     <ButtonFull
                         style={login.buttonFull}                
-                        onPress={this.login}
-                        text="LOG IN" />   
+                        onPress={this.signUp}
+                        text="SIGN UP" />   
                 </View>
                 <View style={{marginTop: 15}}>
                     <ButtonBordered
                         style={login.buttonBordered}
-                        onPress={this.signUp}
-                        text="Sign Up"
+                        onPress={this.login}
+                        text="Log In"
                         />
                 </View>
                 <View style={{marginTop: 30}}>

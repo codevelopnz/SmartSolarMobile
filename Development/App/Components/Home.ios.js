@@ -54,7 +54,7 @@ var Home = React.createClass({
 	    return (
 	     	<View style={styles.bg}> 
 	     		<NavigationBar
-	     			tintColor={'rgba(0, 0, 0, 0.5)'}
+	     			tintColor={'#EF6C00'}
                     
 					title={{ 
 						title: 'Home', 
