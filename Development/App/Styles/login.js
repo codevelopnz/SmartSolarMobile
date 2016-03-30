@@ -9,7 +9,7 @@ var {
 
 module.exports = StyleSheet.create({
 	textInput: {
-		height: 51, 
+		height: 52, 
 		backgroundColor: 'transparent',
 		color: 'rgba(109, 110, 133, 0.6)',
 		paddingLeft: 32,
@@ -49,7 +49,7 @@ module.exports = StyleSheet.create({
         right: 0
     },
     bigButton: {
-      marginTop: 10  
+      marginTop: 52  
     },
     smllButton: {
         marginTop: 16,
@@ -62,27 +62,27 @@ module.exports = StyleSheet.create({
 		alignSelf: 'stretch',
 		position: 'relative',										
 		borderColor: 'rgba(109, 110, 133, 0.6)',
-		borderBottomWidth: 0.5,
-		borderTopWidth: 0.5,
+		borderBottomWidth: 1,
+		borderTopWidth: 1,
 		borderLeftWidth: 0,
 		borderRightWidth: 0,
 		marginTop: 0,
 		marginRight: 0,
 		marginLeft: 0,
-		height: 51
+		height: 52
 	},
     borderTop: {
 		alignSelf: 'stretch',
 		position: 'relative',										
 		borderColor: 'rgba(109, 110, 133, 0.6)',
 		borderBottomWidth: 0,
-		borderTopWidth: 0.5,
+		borderTopWidth: 1,
 		borderLeftWidth: 0,
 		borderRightWidth: 0,
 		marginTop: 0,
 		marginRight: 0,
 		marginLeft: 0,
-		height: 51
+		height: 52
 	},
     
 });

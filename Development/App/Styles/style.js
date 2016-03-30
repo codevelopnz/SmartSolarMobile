@@ -60,7 +60,6 @@ var styles = StyleSheet.create({
      link: {
         backgroundColor: 'transparent',
         padding: 5,
-        borderColor: '#eeeeee',
         borderWidth:1,
         borderColor: 'transparent',
      },
@@ -163,8 +162,7 @@ var styles = StyleSheet.create({
         alignSelf: 'stretch',
         marginLeft: 0,
         marginRight: 0,
-        padding: 20,
-        height: 50,
+        padding: 0,
     },
     buttonTextLink: {
         textAlign: 'center',
