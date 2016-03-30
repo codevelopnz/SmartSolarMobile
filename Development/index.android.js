@@ -8,19 +8,16 @@ var React = require('react-native');
 var RootRouter = require('./App/Components/RootRouter');
 
 var {
-    AppRegistry,
-
+    AppRegistry
 } = React;
 
 var NativeStarterKit = React.createClass({
     render: function() {
 
         return (
-            <RootRouter />   
-            )
+            <RootRouter />               
+        )
     }
 })
 
-
-
-AppRegistry.registerComponent('NativeStarterKit', () => NativeStarterKit);
+AppRegistry.registerComponent('SmartSolarMobile', () => NativeStarterKit);

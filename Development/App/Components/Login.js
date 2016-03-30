@@ -43,9 +43,7 @@ var Login = React.createClass({
             <View  style={login.bg}> 
                 
                 <Image source={require('image!logo')} style={login.logo}/>
-                <Text style={styles.logo}>
-                
-                </Text>  
+
                 <View style={login.borderTop}>   
                     <TextInput
                         style={login.textInput}
@@ -59,20 +57,20 @@ var Login = React.createClass({
                         secureTextEntry={true}
                         placeholderTextColor={'rgba(109, 110, 133, 0.6)'} />
                 </View>
-                <View style={{marginTop: 15}}>
+                <View style={login.bigButton}>
                     <ButtonFull
                         style={login.buttonFull}                
                         onPress={this.login}
                         text="LOG IN" />   
                 </View>
-                <View style={{marginTop: 15}}>
+                <View style={login.smllButton}>
                     <ButtonBordered
                         style={login.buttonBordered}
                         onPress={this.signUp}
                         text="Sign Up"
                         />
                 </View>
-                <View style={{marginTop: 30}}>
+                <View style={login.forgotPassword}>
                     <ButtonLink
                         style={login.buttonLink}
                         onPress={this.signUp}

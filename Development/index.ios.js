@@ -20,4 +20,4 @@ var NativeStarterKit = React.createClass({
     }
 })
 
-AppRegistry.registerComponent('NativeStarterKit', () => NativeStarterKit);
+AppRegistry.registerComponent('SmartSolarMobile', () => NativeStarterKit);

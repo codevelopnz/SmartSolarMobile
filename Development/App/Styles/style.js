@@ -137,8 +137,8 @@ var styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderColor: '#EF6C00',
         borderWidth: 1,
-        marginLeft: 10,
-        marginRight: 10
+        marginLeft: 16,
+        marginRight: 16
     },
     buttonTextOpen: {
         color: '#EF6C00',
@@ -146,9 +146,18 @@ var styles = StyleSheet.create({
         fontSize: 24
     },
     buttonBordered: {
-        height: 50.5,
+        backgroundColor: '#fff',
+        borderColor: '#EF6C00',
+        borderWidth: 1,
+        marginLeft: 16,
+        marginRight: 16,
+        height: 44
+    },
+    buttonTextBordered: {
         fontSize: 16,
-        padding: 20,
+        color: '#EF6C00',
+        alignSelf: 'center',
+        paddingTop: 12
     },
     buttonLink: {
         alignSelf: 'stretch',

@@ -16,7 +16,7 @@ module.exports = StyleSheet.create({
         fontSize: 16
 	},
 	bg : {
-		backgroundColor: '#fffff',
+		backgroundColor: '#ffffff',
 		flex: 1,
 		justifyContent: 'center',
 		padding: 0
@@ -30,7 +30,7 @@ module.exports = StyleSheet.create({
     },
 	logo: {
 		marginBottom: 60,
-		marginTop: -50,
+		marginTop: 0,
 		alignSelf: 'center',
 		width: 94,		
 		height: 94,		
@@ -39,6 +39,25 @@ module.exports = StyleSheet.create({
 	navbar: {
 		borderBottomColor: 'transparent',
 	},
+    forgotPassword: {
+        bottom: 24,
+        position: 'absolute',
+        marginBottom: 0,
+        justifyContent: 'center',
+        alignSelf: 'center',
+        left: 0,
+        right: 0
+    },
+    bigButton: {
+      marginTop: 10  
+    },
+    smllButton: {
+        marginTop: 16,
+    },
+    buttonBordered: {
+        fontSize: 10,
+        padding: 12
+    },
 	border: {
 		alignSelf: 'stretch',
 		position: 'relative',										

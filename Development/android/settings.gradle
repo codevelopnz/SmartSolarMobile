@@ -1,3 +1,3 @@
-rootProject.name = 'NativeStarterKit'
+rootProject.name = 'SmartSolarMobile'
 
 include ':app'
