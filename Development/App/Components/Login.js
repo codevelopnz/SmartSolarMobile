@@ -3,12 +3,13 @@
 
 var React = require('react-native');
 
-var styles = require('../Styles/style');
+// var styles = require('../Styles/style');
 var login = require('../Styles/login');
 var ButtonFull = require('./ButtonFull');
 var ButtonBordered = require('./ButtonBordered');
 var ButtonLink = require('./ButtonLink');
 var AppDispatcher = require('./../Dispatcher/AppDispatcher');
+
 
 var {
     View,
@@ -42,7 +43,7 @@ var Login = React.createClass({
         return (
             <View  style={login.bg}> 
                 
-                <Image source={require('image!logo')} style={login.logo}/>
+                <Image source={require('./../Images/logo.png')} style={login.logo}/>
 
                 <View style={login.borderTop}>   
                     <TextInput
@@ -57,20 +58,20 @@ var Login = React.createClass({
                         secureTextEntry={true}
                         placeholderTextColor={'rgba(109, 110, 133, 0.6)'} />
                 </View>
-                <View style={login.bigButton}>
+                <View style={{marginTop: 15}}>
                     <ButtonFull
                         style={login.buttonFull}                
                         onPress={this.login}
                         text="LOG IN" />   
                 </View>
-                <View style={login.smllButton}>
+                <View style={{marginTop: 15}}>
                     <ButtonBordered
                         style={login.buttonBordered}
                         onPress={this.signUp}
                         text="Sign Up"
                         />
                 </View>
-                <View style={login.forgotPassword}>
+                <View style={{marginTop: 30}}>
                     <ButtonLink
                         style={login.buttonLink}
                         onPress={this.signUp}

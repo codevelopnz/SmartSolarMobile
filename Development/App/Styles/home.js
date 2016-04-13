@@ -9,7 +9,7 @@ var {
 
 module.exports = StyleSheet.create({
 	welcome: {
-		color: '#fff',
+		color: '#000',
 		textAlign: 'center',
 		fontSize: 20,
 		marginBottom: 20,

@@ -42,10 +42,8 @@ var Login = React.createClass({
         return (
             <View  style={login.bg}> 
                 
-                <Image source={require('image!logo')} style={login.logo}/>
-                <Text style={styles.logo}>
-                
-                </Text>  
+                <Image source={require('./../Images/logo.png')} style={login.logo}/>
+
                 <View style={login.borderTop}>   
                     <TextInput
                         style={login.textInput}
