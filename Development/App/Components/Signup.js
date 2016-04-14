@@ -3,11 +3,11 @@
 
 var React = require('react-native');
 
-var styles = require('../Styles/style');
 var login = require('../Styles/login');
 var ButtonFull = require('./ButtonFull');
 var ButtonBordered = require('./ButtonBordered');
 var ButtonLink = require('./ButtonLink');
+var LoginForm = require('./LoginForm');
 var AppDispatcher = require('./../Dispatcher/AppDispatcher');
 
 var {
@@ -20,7 +20,7 @@ var {
 
 var windowWidth = Dimensions.get('window').width;
 
-var Login = React.createClass({
+var SignUp = React.createClass({
     login(){
         var SignUp = require('./Signup');
         AppDispatcher.dispatch({
@@ -44,19 +44,8 @@ var Login = React.createClass({
                 
                 <Image source={require('./../Images/logo.png')} style={login.logo}/>
 
-                <View style={login.borderTop}>   
-                    <TextInput
-                        style={login.textInput}
-                        placeholder={'EMAIL'}
-                        placeholderTextColor={'rgba(109, 110, 133, 0.6)'} />
-                </View>
-                <View style={login.border}>
-                    <TextInput
-                        style={login.textInput}
-                        placeholder={'PASSWORD'}
-                        secureTextEntry={true}
-                        placeholderTextColor={'rgba(109, 110, 133, 0.6)'} />
-                </View>
+                <LoginForm />
+                
                 <View style={{marginTop: 15}}>
                     <ButtonFull
                         style={login.buttonFull}                
@@ -84,4 +73,4 @@ var Login = React.createClass({
 
 
 
-module.exports = Login;
+module.exports = SignUp;
