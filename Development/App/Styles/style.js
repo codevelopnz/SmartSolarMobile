@@ -169,6 +169,18 @@ var styles = StyleSheet.create({
         color: '#6D6E85',
         fontSize: 12
         
+    },
+    dashSegments: {
+        borderColor: '#EF6C00',
+        borderWidth: 1,
+        borderRadius: 10
+    },
+    dashSegment: {
+        padding: 10
+    },
+    dashSegmentText: {
+        textAlign: 'center',
+        
     }
 });
 

@@ -6,7 +6,6 @@ var ReactNative = require('react-native');
 var Dashboard = require('./Dashboard');
 var Settings = require('./Settings');
 
-
 var {
   StyleSheet,
   TabBarIOS,

@@ -3,6 +3,7 @@
 
 var React = require('react-native');
 var styles = require('../Styles/style');
+var DashboardSegments = require('./DashboardSegments');
 
 var {
     Text,
@@ -10,20 +11,17 @@ var {
     View,
 } = React;
 
-
-
 var Dashboard = React.createClass({
 
 	render: function() {
 
 	    return (
 	     	<View> 
-             <Text>hi</Text>
+             
+             <DashboardSegments />
 	        </View>
 	    );
   }
 });
-
-
 
 module.exports = Dashboard;
