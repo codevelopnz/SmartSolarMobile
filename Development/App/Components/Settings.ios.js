@@ -30,11 +30,11 @@ var Settings = React.createClass({
     	});
     },
     
-    settings(){
-      var Settings = require('./Settings');
+    home(){
+      var Home = require('./Home');
       AppDispatcher.dispatch({
           actionType: 'Navigate',
-          component: Settings
+          component: Home
       });
     },
 
@@ -65,13 +65,13 @@ var Settings = React.createClass({
                         title="Dashboard"
                         icon={require('././../Images/Tacho.png')}
                         selectedIcon={require('././../Images/Tacho-On.png')}
+                        onPress={this.home}                        
                         >                    
                     </TabBarIOS.Item>                    
                     <TabBarIOS.Item
                         title="Settings"
                         icon={require('././../Images/Cog.png')}
                         selectedIcon={require('././../Images/Cog-On.png')}
-                        onPress={this.settings}                        
                         >                    
                     </TabBarIOS.Item>
                 </TabBarIOS>
