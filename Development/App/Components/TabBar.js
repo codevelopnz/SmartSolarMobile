@@ -16,13 +16,11 @@ var TabBarExample = React.createClass({
     description: 'Tab-based navigation.',
   },
 
-  displayName: 'TabBarExample',
+  displayName: '',
 
   getInitialState: function() {
     return {
-      selectedTab: 'redTab',
-      notifCount: 0,
-      presses: 0,
+      selectedTab: 'dashTab'
     };
   },
 
@@ -38,39 +36,28 @@ var TabBarExample = React.createClass({
   render: function() {
     return (
       <TabBarIOS
-        tintColor="white"
-        barTintColor="darkslateblue">
+        tintColor={'#EF6C00'}
+        translucent={true}>
         <TabBarIOS.Item
-          title="Blue Tab"
-          icon={{uri: base64Icon, scale: 3}}
-          selected={this.state.selectedTab === 'blueTab'}
+          title="Dashboard"
+          icon={require('././../Images/Tacho.png')}
+          selectedIcon={require('././../Images/Tacho-On.png')}
+          selected={this.state.selectedTab === 'dashTab'}
           onPress={() => {
             this.setState({
-              selectedTab: 'blueTab',
+              selectedTab: 'dashTab',
             });
           }}>
           {this._renderContent('#414A8C', 'Blue Tab')}
         </TabBarIOS.Item>
         <TabBarIOS.Item
-          systemIcon="history"
-          badge={this.state.notifCount > 0 ? this.state.notifCount : undefined}
-          selected={this.state.selectedTab === 'redTab'}
+          title="Settings"
+          icon={require('././../Images/Cog.png')}
+          selectedIcon={require('././../Images/Cog-On.png')}
+          selected={this.state.selectedTab === 'settingsTab'}
           onPress={() => {
             this.setState({
-              selectedTab: 'redTab',
-              notifCount: this.state.notifCount + 1,
-            });
-          }}>
-          {this._renderContent('#783E33', 'Red Tab', this.state.notifCount)}
-        </TabBarIOS.Item>
-        <TabBarIOS.Item
-          icon={require('./flux.png')}
-          title="More"
-          selected={this.state.selectedTab === 'greenTab'}
-          onPress={() => {
-            this.setState({
-              selectedTab: 'greenTab',
-              presses: this.state.presses + 1
+              selectedTab: 'settingsTab'
             });
           }}>
           {this._renderContent('#21551C', 'Green Tab', this.state.presses)}
