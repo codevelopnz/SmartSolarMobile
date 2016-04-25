@@ -29,62 +29,45 @@ var Home = React.createClass({
 
     	});
     },
+    
+    settings(){
+      var Settings = require('./Settings');
+      AppDispatcher.dispatch({
+          actionType: 'Navigate',
+          component: Settings
+      });
+    },
 
 	render: function() {
-
-	  	const leftButtonConfig = {
-	      title: 'Back',
-          tintColor: '#fff',
-	      handler: () => {
-	      	var Login = require('./Login');
-
-	         AppDispatcher.dispatch({
-	          actionType: 'Back',
-	    	});
-	      }
-		};
-
-	  	const rightButtonConfig = {
-	      title: 'Menu',
-          tintColor: '#fff',
-	      handler: () => {
-	      	AppDispatcher.dispatch({
-	          actionType: 'Open',
-	    	});
-	      }
-		};
 
 	    return (
 	     	<View style={styles.bg}> 
 	     		<NavigationBar
 	     			tintColor={'#EF6C00'}                    
 					title={{ 
-						title: 'Home', 
+						title: 'Dashboard', 
 						tintColor: '#fff'
 					}}
-					leftButton={leftButtonConfig}
-					rightButton={rightButtonConfig}
 					 />
 				<View style={styles.verticalCenter}>
                     <Text style={home.welcome}>
                         Hey There! Welcome!
                     </Text>
-                
-                    <ButtonRounded
-                        onPress={this.logout}
-                        text="Logout" />               
+            
 	          	</View>
                 <TabBarIOS
                     tintColor={'#EF6C00'}
                     translucent={true}>
                     <TabBarIOS.Item
                         title="Dashboard"
-                        icon={require('././../Images/Tacho.png')}
+                        icon={require('././../Images/Tacho-On.png')}
+                        
                         >                    
                     </TabBarIOS.Item>                    
                     <TabBarIOS.Item
                         title="Settings"
                         icon={require('././../Images/Cog.png')}
+                        onPress={this.settings}
                         >                    
                     </TabBarIOS.Item>
                 </TabBarIOS>
