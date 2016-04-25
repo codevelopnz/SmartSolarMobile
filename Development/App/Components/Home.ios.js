@@ -6,7 +6,6 @@ var styles = require('../Styles/style');
 var NavigationBar = require('react-native-navbar');
 var ButtonRounded = require('./ButtonRounded');
 var home = require('../Styles/home');
-var Button = require('./Button');
 var AppDispatcher = require('./../Dispatcher/AppDispatcher');
 var TabBar = require('./TabBar');
 
@@ -30,7 +29,6 @@ var Home = React.createClass({
     	});
     },
     
-
 	render: function() {
 
 	    return (
@@ -42,19 +40,10 @@ var Home = React.createClass({
 						tintColor: '#fff'
 					}}
 					 />
-				<View style={styles.verticalCenter}>
-                    <Text style={home.welcome}>
-                        Hey There! Welcome!
-                    </Text>
-            
-	          	</View>
                 <TabBar />
 	        </View>
 	    );
   }
 });
-
-
-
 
 module.exports = Home;

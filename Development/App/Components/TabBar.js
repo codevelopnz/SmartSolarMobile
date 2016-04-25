@@ -3,6 +3,10 @@
 
 var React = require('react');
 var ReactNative = require('react-native');
+var Dashboard = require('./Dashboard');
+var Settings = require('./Settings');
+
+
 var {
   StyleSheet,
   TabBarIOS,
@@ -10,7 +14,7 @@ var {
   View,
 } = ReactNative;
 
-var TabBarExample = React.createClass({
+var TabBar = React.createClass({
   statics: {
     title: '<TabBarIOS>',
     description: 'Tab-based navigation.',
@@ -22,15 +26,6 @@ var TabBarExample = React.createClass({
     return {
       selectedTab: 'dashTab'
     };
-  },
-
-  _renderContent: function(color: string, pageText: string, num?: number) {
-    return (
-      <View style={[styles.tabContent, {backgroundColor: color}]}>
-        <Text style={styles.tabText}>{pageText}</Text>
-        <Text style={styles.tabText}>{num} re-renders of the {pageText}</Text>
-      </View>
-    );
   },
 
   render: function() {
@@ -48,7 +43,7 @@ var TabBarExample = React.createClass({
               selectedTab: 'dashTab',
             });
           }}>
-          {this._renderContent('#414A8C', 'Blue Tab')}
+          <Dashboard />
         </TabBarIOS.Item>
         <TabBarIOS.Item
           title="Settings"
@@ -60,7 +55,7 @@ var TabBarExample = React.createClass({
               selectedTab: 'settingsTab'
             });
           }}>
-          {this._renderContent('#21551C', 'Green Tab', this.state.presses)}
+          <Settings />
         </TabBarIOS.Item>
       </TabBarIOS>
     );
@@ -79,4 +74,4 @@ var styles = StyleSheet.create({
   },
 });
 
-module.exports = TabBarExample;
+module.exports = TabBar;
