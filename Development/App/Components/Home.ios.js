@@ -8,12 +8,12 @@ var ButtonRounded = require('./ButtonRounded');
 var home = require('../Styles/home');
 var Button = require('./Button');
 var AppDispatcher = require('./../Dispatcher/AppDispatcher');
+var TabBar = require('./TabBar');
 
 var {   
     Text,
     Image,   
     View,
-    TabBarIOS,
 } = React;
 
 
@@ -30,13 +30,6 @@ var Home = React.createClass({
     	});
     },
     
-    settings(){
-      var Settings = require('./Settings');
-      AppDispatcher.dispatch({
-          actionType: 'Navigate',
-          component: Settings
-      });
-    },
 
 	render: function() {
 
@@ -45,7 +38,7 @@ var Home = React.createClass({
 	     		<NavigationBar
 	     			tintColor={'#EF6C00'}                    
 					title={{ 
-						title: 'Dashboard', 
+						title: '', 
 						tintColor: '#fff'
 					}}
 					 />
@@ -55,22 +48,7 @@ var Home = React.createClass({
                     </Text>
             
 	          	</View>
-                <TabBarIOS
-                    tintColor={'#EF6C00'}
-                    translucent={true}>
-                    <TabBarIOS.Item
-                        title="Dashboard"
-                        icon={require('././../Images/Tacho-On.png')}
-                        
-                        >                    
-                    </TabBarIOS.Item>                    
-                    <TabBarIOS.Item
-                        title="Settings"
-                        icon={require('././../Images/Cog.png')}
-                        onPress={this.settings}
-                        >                    
-                    </TabBarIOS.Item>
-                </TabBarIOS>
+                <TabBar />
 	        </View>
 	    );
   }
