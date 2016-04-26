@@ -4,6 +4,7 @@
 var React = require('react-native');
 var styles = require('../Styles/style');
 var DashboardSegments = require('./DashboardSegments');
+var SimpleChart = require('./Chart');
 
 var {
     Text,

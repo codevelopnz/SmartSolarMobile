@@ -7,10 +7,10 @@ var {
     View,
 } = React;
 
-var styles = StyleSheet.create({ 
+var styles = StyleSheet.create({
     container: {
-      flex: 1,
-       backgroundColor: '#fff',
+        flex: 1,
+        backgroundColor: '#fff',
     },
     transparent: {
         marginTop: 70,
@@ -18,12 +18,12 @@ var styles = StyleSheet.create({
         backgroundColor: 'transparent',
         flex: 1
     },
-    bg : {
-      backgroundColor: '#fff',
-      flex: 1,
+    bg: {
+        backgroundColor: '#fff',
+        flex: 1,
     },
     verticalCenter: {
-      justifyContent: 'center'
+        justifyContent: 'center'
     },
     name: {
         color: 'rgba(255, 255, 255, 1)',
@@ -47,82 +47,82 @@ var styles = StyleSheet.create({
         flexWrap: 'wrap',
         fontSize: 12
     },
-    background: {        
+    background: {
         flex: 1,
     },
-     sidebar: {
+    sidebar: {
         padding: 10,
         paddingTop: 30,
-     },
-     link: {
+    },
+    link: {
         backgroundColor: 'transparent',
         padding: 5,
-        borderWidth:1,
+        borderWidth: 1,
         borderColor: 'transparent',
-     },
+    },
     controlPanel: {
-      flex: 1,
-      backgroundColor:'#326945',
+        flex: 1,
+        backgroundColor: '#326945',
     },
     controlPanelText: {
-      color:'white',
+        color: 'white',
     },
     linkText: {
-      fontSize: 20,
-      color: '#fff'
+        fontSize: 20,
+        color: '#fff'
     },
     logo: {
-      color: '#fff',
-      fontSize: 25,
-      textAlign: 'center',
-      marginTop: -50
+        color: '#fff',
+        fontSize: 25,
+        textAlign: 'center',
+        marginTop: -50
     },
-     desc: {
-      color: '#fff',
-      fontSize: 20,
-      textAlign: 'center',
-      marginTop: 10,
-      marginBottom: 10
+    desc: {
+        color: '#fff',
+        fontSize: 20,
+        textAlign: 'center',
+        marginTop: 10,
+        marginBottom: 10
     },
     controlPanelWelcome: {
-      fontSize: 20,
-      textAlign: 'center',
-      margin: 25,
-      color:'white',
-      fontWeight:'bold',
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 25,
+        color: 'white',
+        fontWeight: 'bold',
     },
-   
+
     sliderMetric: {
-      right:10,
-      width:30,
+        right: 10,
+        width: 30,
     },
     slider: {
-      width: 150,
-      height: 10,
-      margin: 10,
+        width: 150,
+        height: 10,
+        margin: 10,
     },
 
     button: {
-      backgroundColor: '#EF6C00',
-      padding: 15,
-      borderColor: '#EF6C00',
-      borderWidth:1,
-      borderBottomColor: '#EF6C00',
-      marginRight:0,
-      marginLeft:0,
-      alignSelf: 'center',
-      marginTop: 10
+        backgroundColor: '#EF6C00',
+        padding: 15,
+        borderColor: '#EF6C00',
+        borderWidth: 1,
+        borderBottomColor: '#EF6C00',
+        marginRight: 0,
+        marginLeft: 0,
+        alignSelf: 'center',
+        marginTop: 10
     },
     buttonFull: {
-      backgroundColor: '#EF6C00',
-      padding: 15,
-      borderColor: '#EF6C00',
-      borderWidth:1,
-      borderBottomColor: '#EF6C00',
-      marginRight:0,
-      marginLeft:0,
-      alignSelf: 'center',
-      marginTop: 10
+        backgroundColor: '#EF6C00',
+        padding: 15,
+        borderColor: '#EF6C00',
+        borderWidth: 1,
+        borderBottomColor: '#EF6C00',
+        marginRight: 0,
+        marginLeft: 0,
+        alignSelf: 'center',
+        marginTop: 10
     },
     buttonText: {
         color: '#fff',
@@ -164,7 +164,7 @@ var styles = StyleSheet.create({
     buttonTextLink: {
         textAlign: 'center',
         color: '#6D6E85',
-        fontSize: 12,  
+        fontSize: 12,
     },
     dashSegments: {
         borderColor: '#EF6C00',
@@ -175,7 +175,7 @@ var styles = StyleSheet.create({
     },
     dashSegmentText: {
         textAlign: 'center',
-        fontSize: 16,    
+        fontSize: 16,
         color: '#EF6C00',
     },
     dashSegmentTextOn: {
@@ -186,13 +186,21 @@ var styles = StyleSheet.create({
     dashSegment: {
         padding: 14,
         borderBottomWidth: 1,
-        borderColor: '#EF6C00',        
+        borderColor: '#EF6C00',
     },
     dashSegmentOn: {
-        padding: 14,        
+        padding: 14,
         backgroundColor: '#EF6C00',
     },
-
+    row: {
+        flexDirection: 'row',
+        padding: 10,
+        backgroundColor: '#F6F6F6',
+    },
+    separator: {
+        height: 1,
+        backgroundColor: '#CCCCCC',
+    },
 });
 
-module.exports= styles;
+module.exports = styles;
