@@ -5,6 +5,7 @@ var React = require('react');
 var ReactNative = require('react-native');
 var Dashboard = require('./Dashboard');
 var Settings = require('./Settings');
+var styles = require('../Styles/style');
 
 var {
   StyleSheet,

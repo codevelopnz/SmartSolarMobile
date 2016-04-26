@@ -7,19 +7,16 @@ var {
     View,
 } = React;
 
-var styles = StyleSheet.create({
- 
+var styles = StyleSheet.create({ 
     container: {
       flex: 1,
        backgroundColor: '#fff',
     },
-   
     transparent: {
         marginTop: 70,
         padding: 15,
         backgroundColor: 'transparent',
         flex: 1
-        
     },
     bg : {
       backgroundColor: '#fff',
@@ -167,21 +164,35 @@ var styles = StyleSheet.create({
     buttonTextLink: {
         textAlign: 'center',
         color: '#6D6E85',
-        fontSize: 12
-        
+        fontSize: 12,  
     },
     dashSegments: {
         borderColor: '#EF6C00',
         borderWidth: 1,
-        borderRadius: 10
-    },
-    dashSegment: {
-        padding: 10
+        borderRadius: 10,
+        overflow: 'hidden',
+        margin: 16,
     },
     dashSegmentText: {
         textAlign: 'center',
-        
-    }
+        fontSize: 16,    
+        color: '#EF6C00',
+    },
+    dashSegmentTextOn: {
+        textAlign: 'center',
+        color: '#fff',
+        fontSize: 16,
+    },
+    dashSegment: {
+        padding: 14,
+        borderBottomWidth: 1,
+        borderColor: '#EF6C00',        
+    },
+    dashSegmentOn: {
+        padding: 14,        
+        backgroundColor: '#EF6C00',
+    },
+
 });
 
 module.exports= styles;
